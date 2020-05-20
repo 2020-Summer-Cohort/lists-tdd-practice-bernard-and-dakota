@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Xunit;
 
 namespace List_TDD_Practice.Tests
@@ -15,14 +16,14 @@ namespace List_TDD_Practice.Tests
         {
             var list = new List<int>();
 
-            // Replace __FILL_ME_IN__ with the correct value.
+             //Replace __FILL_ME_IN__ with the correct value.
 
-            // Remember, the Assert.Equal() method takes 2 parameters
-            // in the following order (expected value, actual value)
+             //Remember, the Assert.Equal() method takes 2 parameters
+             //in the following order (expected value, actual value)
 
-            // In this case ___FILL_ME_IN__ is what you expect the value to be
-            // and list.Count is the actual value provided by your program
-            Assert.Equal(__FILL_ME_IN__, list.Count);
+             //In this case ___FILL_ME_IN__ is what you expect the value to be
+             //and list.Count is the actual value provided by your program
+            Assert.Equal( 0 , list.Count);
         }
 
         [Fact]
@@ -30,7 +31,9 @@ namespace List_TDD_Practice.Tests
         {
             var list = new List<int>()
             {
-                // Add 3 items to the list here.
+                3,
+                6,
+                9
             };
 
             Assert.Equal(3, list.Count);
